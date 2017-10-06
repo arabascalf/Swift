@@ -14,10 +14,6 @@ import UIKit
 
 /*
  Ciclo for-each para recorrer los elementos, no pude realizar un for tradicional porque no supe cómo hacerlo en Swift 3
- 
- 
- https://github.com/arabascalf/Swift.git
- f7ca378ac5b97e11f4900e1e8656a766d29c8aeb
 */
 for i in 0...100 {
     

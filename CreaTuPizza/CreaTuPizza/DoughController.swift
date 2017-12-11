@@ -13,6 +13,7 @@ class DoughController: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var confirmationLabel: UILabel!
+    var pizzaSize = ""
     
     
     let array = ["Delgada", "Crujiente", "Gruesa"]
@@ -52,6 +53,13 @@ class DoughController: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nextView = segue.destination as! CheeseController
+        nextView.pizzaSize = pizzaSize
+        nextView.doughtType = confirmationLabel.text!
     }
 }
 

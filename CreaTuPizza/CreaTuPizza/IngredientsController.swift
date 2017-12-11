@@ -12,7 +12,14 @@ class IngredientsController: UITableViewController {
     
     let ingredients = ["Jamón", "Peperoni", "Pavo", "Salchicha", "Aceituna", "Cebolla", "Pimiento", "Piña", "Anchoa", "Pollo", "Tocino"]
     
+    var selected = [""]
+    
     var counter = 0
+    
+    var pizzaSize = ""
+    var doughType = ""
+    var cheese = ""
+    var numIngredients = 0
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -29,14 +36,28 @@ class IngredientsController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        if(counter == numIngredients){
+            
+            let nextView = storyboard?.instantiateViewController(withIdentifier: "ConfirController") as! ConfirController
+            
+            nextView.pizzaSize = pizzaSize
+            nextView.doughType = doughType
+            nextView.cheese = cheese
+            nextView.numIngredients = numIngredients
+            
+            navigationController?.pushViewController(nextView, animated: true)
+            
+        }
+        
         if (tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark){
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
             counter -= 1
         }
-        else if (counter < 5){
+        else if (counter < numIngredients){
             tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
             counter += 1
         }
+        
     }
     
     override func viewDidLoad() {

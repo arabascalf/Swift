@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D526DFF1FDF0AA100BC147F /* ConfirController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D526DFE1FDF0AA100BC147F /* ConfirController.swift */; };
+		0D526E011FDF3E0700BC147F /* CounterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D526E001FDF3E0700BC147F /* CounterController.swift */; };
+		0D526E031FDF462200BC147F /* FinalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D526E021FDF462200BC147F /* FinalController.swift */; };
 		0DA4A8381FDED902009AD719 /* IngredientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4A8371FDED902009AD719 /* IngredientsController.swift */; };
 		0DB206BD1FDDDD900067F723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206BC1FDDDD900067F723 /* AppDelegate.swift */; };
 		0DB206BF1FDDDD900067F723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206BE1FDDDD900067F723 /* ViewController.swift */; };
@@ -14,12 +17,14 @@
 		0DB206C41FDDDD900067F723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB206C31FDDDD900067F723 /* Assets.xcassets */; };
 		0DB206C71FDDDD900067F723 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB206C51FDDDD900067F723 /* LaunchScreen.storyboard */; };
 		0DB206F31FDE069F0067F723 /* SizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206F21FDE069F0067F723 /* SizeController.swift */; };
-		0DB206F71FDE1BAC0067F723 /* ConfirmationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206F61FDE1BAC0067F723 /* ConfirmationController.swift */; };
 		0DB206F91FDE1F280067F723 /* DoughController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206F81FDE1F280067F723 /* DoughController.swift */; };
 		0DB206FB1FDE237D0067F723 /* CheeseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB206FA1FDE237D0067F723 /* CheeseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D526DFE1FDF0AA100BC147F /* ConfirController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirController.swift; sourceTree = "<group>"; };
+		0D526E001FDF3E0700BC147F /* CounterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterController.swift; sourceTree = "<group>"; };
+		0D526E021FDF462200BC147F /* FinalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalController.swift; sourceTree = "<group>"; };
 		0DA4A8371FDED902009AD719 /* IngredientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsController.swift; sourceTree = "<group>"; };
 		0DB206B91FDDDD900067F723 /* CreaTuPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreaTuPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB206BC1FDDDD900067F723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +34,6 @@
 		0DB206C61FDDDD900067F723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB206C81FDDDD900067F723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DB206F21FDE069F0067F723 /* SizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeController.swift; sourceTree = "<group>"; };
-		0DB206F61FDE1BAC0067F723 /* ConfirmationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationController.swift; sourceTree = "<group>"; };
 		0DB206F81FDE1F280067F723 /* DoughController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoughController.swift; sourceTree = "<group>"; };
 		0DB206FA1FDE237D0067F723 /* CheeseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheeseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,10 +75,12 @@
 				0DB206C51FDDDD900067F723 /* LaunchScreen.storyboard */,
 				0DB206C81FDDDD900067F723 /* Info.plist */,
 				0DB206F21FDE069F0067F723 /* SizeController.swift */,
-				0DB206F61FDE1BAC0067F723 /* ConfirmationController.swift */,
 				0DB206F81FDE1F280067F723 /* DoughController.swift */,
 				0DB206FA1FDE237D0067F723 /* CheeseController.swift */,
 				0DA4A8371FDED902009AD719 /* IngredientsController.swift */,
+				0D526DFE1FDF0AA100BC147F /* ConfirController.swift */,
+				0D526E001FDF3E0700BC147F /* CounterController.swift */,
+				0D526E021FDF462200BC147F /* FinalController.swift */,
 			);
 			path = CreaTuPizza;
 			sourceTree = "<group>";
@@ -151,13 +157,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D526DFF1FDF0AA100BC147F /* ConfirController.swift in Sources */,
 				0DB206FB1FDE237D0067F723 /* CheeseController.swift in Sources */,
 				0DA4A8381FDED902009AD719 /* IngredientsController.swift in Sources */,
-				0DB206F71FDE1BAC0067F723 /* ConfirmationController.swift in Sources */,
 				0DB206F91FDE1F280067F723 /* DoughController.swift in Sources */,
 				0DB206BF1FDDDD900067F723 /* ViewController.swift in Sources */,
 				0DB206BD1FDDDD900067F723 /* AppDelegate.swift in Sources */,
+				0D526E011FDF3E0700BC147F /* CounterController.swift in Sources */,
 				0DB206F31FDE069F0067F723 /* SizeController.swift in Sources */,
+				0D526E031FDF462200BC147F /* FinalController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

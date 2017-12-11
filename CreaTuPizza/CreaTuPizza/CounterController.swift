@@ -8,16 +8,21 @@
 
 import UIKit
 
-class CheeseController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CounterController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
+    /*@IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var confirmationLabel: UILabel!*/
+    
+
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var confirmationLabel: UILabel!
     
     var pizzaSize = ""
-    var doughtType = ""
+    var doughType = ""
+    var cheese = ""
+    var selected = 0
     
-    
-    let array = ["Mozzarela", "Cheddar", "Parmesano", "Sin queso"]
+    let array = ["1", "2", "3", "4", "5"]
     var size = 0
     
     
@@ -41,6 +46,7 @@ class CheeseController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         size = row
+        selected = size
     }
     
     override func viewDidLoad() {
@@ -58,11 +64,13 @@ class CheeseController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let nextView = segue.destination as! CounterController
+        let nextView = segue.destination as! IngredientsController
         
+        nextView.cheese = cheese
+        nextView.doughType = doughType
         nextView.pizzaSize = pizzaSize
-        nextView.cheese = confirmationLabel.text!
-        nextView.doughType = doughtType
+        nextView.numIngredients = selected
     }
 }
+
 

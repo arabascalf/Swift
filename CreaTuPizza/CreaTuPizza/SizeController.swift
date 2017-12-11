@@ -59,4 +59,10 @@ class SizeController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let nextView = segue.destination as! DoughController
+        nextView.pizzaSize = confirmationLabel.text!
+    }
 }
